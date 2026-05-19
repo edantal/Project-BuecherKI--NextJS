@@ -327,7 +327,7 @@
     @apply text-base font-medium text-black hover:opacity-70 transition-opacity cursor-pointer;
   }
   .nav-user-link {
-    @apply flex items-center gap-1 hover:opacity-70 transition-opacity;
+    @apply flex items-center gap-2 hover:opacity-70 transition-opacity;
   }
   .nav-user-name {
     @apply hidden sm:inline text-base font-medium text-black;

@@ -13,8 +13,8 @@ import {
 import { cn } from '@/lib/utils'
 
 const navItems = [
-  { label: 'Library', href: '/' },
-  { label: 'Add New', href: '/books/new' },
+  { label: 'Bibliothek', href: '/' },
+  { label: 'Neues Buch', href: '/buecher/neu' },
 ]
 
 const Navbar = () => {
@@ -26,7 +26,7 @@ const Navbar = () => {
       <div className='wrapper navbar-height py-4 flex justify-between items-center'>
         <Link href='/' className='flex gap-0.5 items-center'>
           <Image src='/assets/logo.png' alt='BooksAI' width={42} height={26} />
-          <span className='logo-text'>BooksAI</span>
+          <span className='logo-text'>Bücher-KI</span>
         </Link>
 
         <nav className='w-fit flex gap-7.5 items-center'>
@@ -57,8 +57,8 @@ const Navbar = () => {
               <div className='nav-user-link'>
                 <UserButton />
                 {user?.firstName && (
-                  <Link href='/subscriptions' className='nav-user-name'>
-                    Hi, {user.firstName}
+                  <Link href='/abonnements' className='nav-user-name'>
+                    {user.firstName}
                   </Link>
                 )}
               </div>
